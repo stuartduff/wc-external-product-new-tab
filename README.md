@@ -4,7 +4,7 @@ This extension will will open all [WooCommerce](https://wordpress.org/plugins/wo
 
 ## Installation
 
-1. Download the plugin from it's GitHub Repository Download [WooCommerce External Product New Tab](https://github.com/stuartduff/wc-external-product-new-tab.
+1. Download the plugin from it's GitHub Repository Download [WooCommerce External Product New Tab](https://github.com/stuartduff/wc-external-product-new-tab).
 2. Goto WordPress > Appearance > Plugins > Add New.
 3. Click Upload Plugin and Choose File, then select the plugin's .zip file. Click Install Now.
 4. Click Activate to use your new plugin right away.
