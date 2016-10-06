@@ -1,6 +1,6 @@
 # WooCommerce External Product New Tab
 
-This extension will will open all [WooCommerce](https://wordpress.org/plugins/woocommerce/) external / affiliate product Buy Now links in a new browser tab.
+This plugin sets all external / affiliate product buy now links on a [WooCommerce](https://wordpress.org/plugins/woocommerce/) site to open in a new web browser tab.
 
 ## Installation
 
