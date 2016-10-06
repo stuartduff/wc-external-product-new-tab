@@ -137,14 +137,14 @@ final class WC_External_Product_New_Tab {
    */
   public function plugin_setup() {
     if ( class_exists( 'woocommerce' ) ) {
-        // Filter only external product archive buttons to open in a new browser tab.
-        add_filter( 'woocommerce_loop_add_to_cart_link',  array( $this, 'external_add_product_link' ), 10, 2 );
+      // Filter only external product archive buttons to open in a new browser tab.
+      add_filter( 'woocommerce_loop_add_to_cart_link',  array( $this, 'external_add_product_link' ), 10, 2 );
 
-        // Remove the default WooCommerce single external product add to cart button.
-        remove_action( 'woocommerce_external_add_to_cart', 'woocommerce_external_add_to_cart', 30 );
+      // Remove the default WooCommerce single external product add to cart button.
+      remove_action( 'woocommerce_external_add_to_cart', 'woocommerce_external_add_to_cart', 30 );
 
-        // Add the open in a new browser tab WooCommerce single external product add to cart button.
-    		add_action( 'woocommerce_external_add_to_cart', array( $this,'wc_external_add_to_cart'), 30 );
+      // Add the open in a new browser tab WooCommerce single external product add to cart button.
+      add_action( 'woocommerce_external_add_to_cart', array( $this,'wc_external_add_to_cart'), 30 );
 
     } else {
       add_action( 'admin_notices', array( $this, 'install_woocommerce_core_notice' ) );
@@ -171,12 +171,12 @@ final class WC_External_Product_New_Tab {
        *  The original code is located in the WooCommerce file /templates/loop/add-to-cart.php
        */
       $link =	sprintf( '<a rel="nofollow" href="%s" data-quantity="%s" data-product_id="%s" data-product_sku="%s" class="%s" target="_blank">%s</a>',
-      		esc_url( $product->add_to_cart_url() ),
-      		esc_attr( isset( $quantity ) ? $quantity : 1 ),
-      		esc_attr( $product->id ),
-      		esc_attr( $product->get_sku() ),
-      		esc_attr( isset( $class ) ? $class : 'button' ),
-      		esc_html( $product->add_to_cart_text() )
+        esc_url( $product->add_to_cart_url() ),
+        esc_attr( isset( $quantity ) ? $quantity : 1 ),
+        esc_attr( $product->id ),
+        esc_attr( $product->get_sku() ),
+        esc_attr( isset( $class ) ? $class : 'button' ),
+        esc_html( $product->add_to_cart_text() )
       );
     }
 
@@ -210,6 +210,6 @@ final class WC_External_Product_New_Tab {
 
     <?php do_action( 'woocommerce_after_add_to_cart_button' );
 
-	}
+  }
 
 } // End Class
