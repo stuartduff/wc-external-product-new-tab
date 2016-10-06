@@ -184,11 +184,11 @@ final class WC_External_Product_New_Tab {
   }
 
   /**
-	 * Output the external product add to cart area.
-	 *
-	 * @subpackage	Product
-	 */
-	public function wc_external_add_to_cart() {
+   * Output the external product add to cart area.
+   *
+   * @subpackage	Product
+   */
+  public function wc_external_add_to_cart() {
     global $product;
 
     if ( ! $product->add_to_cart_url() ) {
