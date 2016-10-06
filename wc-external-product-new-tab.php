@@ -189,11 +189,11 @@ final class WC_External_Product_New_Tab {
 	 * @subpackage	Product
 	 */
 	public function wc_external_add_to_cart() {
-		global $product;
+    global $product;
 
-		if ( ! $product->add_to_cart_url() ) {
-			return;
-		}
+    if ( ! $product->add_to_cart_url() ) {
+      return;
+    }
 
     $product_url = $product->add_to_cart_url();
     $button_text = $product->single_add_to_cart_text();
