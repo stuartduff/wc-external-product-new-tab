@@ -140,10 +140,10 @@ final class WC_External_Product_New_Tab {
         // Filter only external product archive buttons to open in a new browser tab.
         add_filter( 'woocommerce_loop_add_to_cart_link',  array( $this, 'external_add_product_link' ), 10, 2 );
 
-        // Remove the default WooCommerce single product add to cart button.
+        // Remove the default WooCommerce single external product add to cart button.
         remove_action( 'woocommerce_external_add_to_cart', 'woocommerce_external_add_to_cart', 30 );
 
-        // Add open in a new browser tab WooCommerce single product add to cart button
+        // Add the open in a new browser tab WooCommerce single external product add to cart button.
     		add_action( 'woocommerce_external_add_to_cart', array( $this,'wc_external_add_to_cart'), 30 );
 
     } else {
@@ -167,6 +167,9 @@ final class WC_External_Product_New_Tab {
     global $product;
 
     if ( $product->is_type( 'external' ) ) {
+      /**
+       *  The original code is located in the WooCommerce file /templates/loop/add-to-cart.php
+       */
       $link =	sprintf( '<a rel="nofollow" href="%s" data-quantity="%s" data-product_id="%s" data-product_sku="%s" class="%s" target="_blank">%s</a>',
       		esc_url( $product->add_to_cart_url() ),
       		esc_attr( isset( $quantity ) ? $quantity : 1 ),
@@ -192,7 +195,21 @@ final class WC_External_Product_New_Tab {
 			return;
 		}
 
-		load_template( $this->plugin_path . 'templates/single-product/add-to-cart/external.php' );
+    $product_url = $product->add_to_cart_url();
+    $button_text = $product->single_add_to_cart_text();
+
+    /**
+     *  The code below this comment outputs the edited add to cart button with target="_blank" added to the html markup.
+     *  The original code is located in the WooCommerce file /templates/single-product/add-to-cart/external.php
+     */
+    do_action( 'woocommerce_before_add_to_cart_button' ); ?>
+
+    <p class="cart">
+    	<a href="<?php echo esc_url( $product_url ); ?>" rel="nofollow" class="single_add_to_cart_button button alt" target="_blank"><?php echo esc_html( $button_text ); ?></a>
+    </p>
+
+    <?php do_action( 'woocommerce_after_add_to_cart_button' );
+
 	}
 
 } // End Class
