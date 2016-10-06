@@ -163,6 +163,12 @@ final class WC_External_Product_New_Tab {
     </div>';
   }
 
+  /**
+   * Output external product add to cart button on product archives, shortcodes etc.
+   *
+   * @since   1.0.0
+   * @return  $link
+   */
   public function external_add_product_link( $link ) {
     global $product;
 
@@ -184,9 +190,9 @@ final class WC_External_Product_New_Tab {
   }
 
   /**
-   * Output the external product add to cart area.
+   * Output the external product add to cart button on single products.
    *
-   * @subpackage	Product
+   * @since   1.0.0
    */
   public function wc_external_add_to_cart() {
     global $product;
