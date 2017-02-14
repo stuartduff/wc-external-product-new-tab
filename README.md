@@ -21,5 +21,8 @@ All support requests for this extension should be posted to the [WooCommerce Ext
 
 ## Changelog
 
+**1.0.1 - 14/02/17**
+* Fix - Added additional css class of product_type_external to archive external products button.
+
 **1.0.0 - 07/09/16**
 * Initial Release - first version of the plugin released.

@@ -2,14 +2,16 @@
 Contributors: stuartduff
 Tags: ecommerce, e-commerce, store, sales, sell, shop, cart, checkout, storefront
 Requires at least: 4.6
-Tested up to: 4.6
-Stable tag: 1.0.0
+Tested up to: 4.7.2
+Stable tag: 1.0.1
 License: GPLv3
 License URI: https://www.gnu.org/licenses/gpl-3.0.html
 
 == Description ==
 
 This plugin sets all external / affiliate product buy now links on a [WooCommerce](https://wordpress.org/plugins/woocommerce/) site to open in a new web browser tab.
+
+There are no settings for the plugin and you simply need to install and activate for your WooCommerce external product links to then open in a new tab.
 
 == Installation ==
 
@@ -23,6 +25,9 @@ This plugin sets all external / affiliate product buy now links on a [WooCommerc
 For this extension to function the [WooCommerce](https://wordpress.org/plugins/woocommerce/) must be installed and activated on your WordPress site.
 
 == Changelog ==
+
+= 1.0.1 - 14/02/17 =
+* Fix - Added additional css class of product_type_external to archive external products button.
 
 = 1.0.0 - 07/09/16 =
 * Initial Release - first version of the plugin released.
