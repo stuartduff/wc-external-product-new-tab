@@ -7,7 +7,7 @@
  * Author:            Stuart Duff
  * Author URI:        http://stuartduff.com
  * Requires at least: 4.6
- * Tested up to:      4.7.2
+ * Tested up to:      4.8
  *
  * Text Domain: wc-external-product-new-tab
  * Domain Path: /languages/

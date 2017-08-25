@@ -1,8 +1,8 @@
 === WooCommerce External Product New Tab ===
 Contributors: stuartduff
-Tags: ecommerce, e-commerce, store, sales, sell, shop, cart, checkout, storefront
+Tags: ecommerce, e-commerce, store, sales, sell, shop, cart, checkout, woocommerce
 Requires at least: 4.6
-Tested up to: 4.7.2
+Tested up to: 4.8
 Stable tag: 1.0.1
 License: GPLv3
 License URI: https://www.gnu.org/licenses/gpl-3.0.html
