@@ -3,7 +3,7 @@ Contributors: stuartduff
 Tags: ecommerce, e-commerce, store, sales, sell, shop, cart, checkout, woocommerce
 Requires at least: 4.6
 Tested up to: 4.8
-Stable tag: 1.0.1
+Stable tag: 1.0.2
 License: GPLv3
 License URI: https://www.gnu.org/licenses/gpl-3.0.html
 
@@ -25,6 +25,9 @@ There are no settings for the plugin and you simply need to install and activate
 For this extension to function the [WooCommerce](https://wordpress.org/plugins/woocommerce/) must be installed and activated on your WordPress site.
 
 == Changelog ==
+
+= 1.0.2 - 27/10/17 =
+* Added WooCommerce plugin version check compatibility.
 
 = 1.0.1 - 14/02/17 =
 * Fix - Added additional css class of product_type_external to archive external products button.
