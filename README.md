@@ -21,8 +21,13 @@ All support requests for this extension should be posted to the [WooCommerce Ext
 
 ## Changelog
 
+**1.0.3 - 19/02/20**
+* Fix - Notice: id was called incorrectly error.
+* Added -  external_add_product_link_html filter.
+* Added -  external_add_product_link_html_classes filter.
+
 **1.0.2 - 27/10/17**
-* Added WooCommerce plugin version check compatibility.
+* Added - WooCommerce plugin version check compatibility.
 
 **1.0.1 - 14/02/17**
 * Fix - Added additional css class of product_type_external to archive external products button.

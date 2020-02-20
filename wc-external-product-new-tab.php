@@ -6,12 +6,12 @@
  * Version:           1.0.2
  * Author:            Stuart Duff
  * Author URI:        http://stuartduff.com
- * Requires at least: 4.6
- * Tested up to:      4.8
+ * Requires at least: 5.3
+ * Tested up to:      5.3
  * Text Domain: wc-external-product-new-tab
  * Domain Path: /languages/
- * WC requires at least: 3.0.0
- * WC tested up to: 3.2.0
+ * WC requires at least: 3.9
+ * WC tested up to: 4.0
  *
  * @package WC_External_Product_New_Tab
  */
@@ -177,12 +177,12 @@ final class WC_External_Product_New_Tab {
       /**
        *  The original code is located in the WooCommerce file /templates/loop/add-to-cart.php
        */
-      $link =	sprintf( '<a rel="nofollow" href="%s" data-quantity="%s" data-product_id="%s" data-product_sku="%s" class="%s" target="_blank">%s</a>',
+      $link =	sprintf( apply_filters( 'external_add_product_link_html', '<a rel="nofollow" href="%s" data-quantity="%s" data-product_id="%s" data-product_sku="%s" class="%s" target="_blank">%s</a>' ),
         esc_url( $product->add_to_cart_url() ),
         esc_attr( isset( $quantity ) ? $quantity : 1 ),
-        esc_attr( $product->id ),
+        esc_attr( $product->get_id() ),
         esc_attr( $product->get_sku() ),
-        esc_attr( isset( $class ) ? $class : 'button product_type_external' ),
+        esc_attr( isset( $class ) ? $class : apply_filters( 'external_add_product_link_html_classes', 'button product_type_external' ) ),
         esc_html( $product->add_to_cart_text() )
       );
     }

@@ -1,9 +1,9 @@
 === WooCommerce External Product New Tab ===
 Contributors: stuartduff
 Tags: ecommerce, e-commerce, store, sales, sell, shop, cart, checkout, woocommerce
-Requires at least: 4.6
-Tested up to: 4.8
-Stable tag: 1.0.2
+Requires at least: 5.3
+Tested up to: 5,3
+Stable tag: 1.0.3
 License: GPLv3
 License URI: https://www.gnu.org/licenses/gpl-3.0.html
 
@@ -26,8 +26,13 @@ For this extension to function the [WooCommerce](https://wordpress.org/plugins/w
 
 == Changelog ==
 
+= 1.0.3 - 19/02/20 =
+* Fix - Notice: id was called incorrectly error.
+* Added -  external_add_product_link_html filter.
+* Added -  external_add_product_link_html_classes filter.
+
 = 1.0.2 - 27/10/17 =
-* Added WooCommerce plugin version check compatibility.
+* Added - WooCommerce plugin version check compatibility.
 
 = 1.0.1 - 14/02/17 =
 * Fix - Added additional css class of product_type_external to archive external products button.
