@@ -3,11 +3,11 @@
  * Plugin Name:       WooCommerce External Product New Tab
  * Plugin URI:        https://wordpress.org/plugins/wc-external-product-new-tab
  * Description:       This plugin sets all external / affiliate product buy now links on a WooCommerce site to open in a new web browser tab.
- * Version:           1.0.2
+ * Version:           1.0.3
  * Author:            Stuart Duff
  * Author URI:        http://stuartduff.com
  * Requires at least: 5.3
- * Tested up to:      5.3
+ * Tested up to:      5.4
  * Text Domain: wc-external-product-new-tab
  * Domain Path: /languages/
  * WC requires at least: 3.9
