@@ -2,8 +2,8 @@
 Contributors: stuartduff
 Tags: ecommerce, e-commerce, store, sales, sell, shop, cart, checkout, woocommerce
 Requires at least: 5.3
-Tested up to: 5.4
-Stable tag: 1.0.3
+Tested up to: 5.8
+Stable tag: 1.0.4
 License: GPLv3
 License URI: https://www.gnu.org/licenses/gpl-3.0.html
 
@@ -25,6 +25,9 @@ There are no settings for the plugin and you simply need to install and activate
 For this extension to function the [WooCommerce](https://wordpress.org/plugins/woocommerce/) must be installed and activated on your WordPress site.
 
 == Changelog ==
+
+= 1.0.4 - 21/05/22 =
+* Added -  noopener noreferrer to external links.
 
 = 1.0.3 - 19/02/20 =
 * Fix - Notice: id was called incorrectly error.

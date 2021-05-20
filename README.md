@@ -21,6 +21,9 @@ All support requests for this extension should be posted to the [WooCommerce Ext
 
 ## Changelog
 
+**1.0.4 - 21/05/21**
+* Added -  noopener noreferrer to external links.
+
 **1.0.3 - 19/02/20**
 * Fix - Notice: id was called incorrectly error.
 * Added -  external_add_product_link_html filter.

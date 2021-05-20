@@ -3,15 +3,15 @@
  * Plugin Name:       WooCommerce External Product New Tab
  * Plugin URI:        https://wordpress.org/plugins/wc-external-product-new-tab
  * Description:       This plugin sets all external / affiliate product buy now links on a WooCommerce site to open in a new web browser tab.
- * Version:           1.0.3
+ * Version:           1.0.4
  * Author:            Stuart Duff
  * Author URI:        http://stuartduff.com
  * Requires at least: 5.3
- * Tested up to:      5.4
+ * Tested up to:      5.8
  * Text Domain: wc-external-product-new-tab
  * Domain Path: /languages/
- * WC requires at least: 3.9
- * WC tested up to: 4.0
+ * WC requires at least: 5.0
+ * WC tested up to: 5.4
  *
  * @package WC_External_Product_New_Tab
  */
@@ -177,7 +177,7 @@ final class WC_External_Product_New_Tab {
       /**
        *  The original code is located in the WooCommerce file /templates/loop/add-to-cart.php
        */
-      $link =	sprintf( apply_filters( 'external_add_product_link_html', '<a rel="nofollow" href="%s" data-quantity="%s" data-product_id="%s" data-product_sku="%s" class="%s" target="_blank">%s</a>' ),
+      $link =	sprintf( apply_filters( 'external_add_product_link_html', '<a rel="nofollow noopener noreferrer" href="%s" data-quantity="%s" data-product_id="%s" data-product_sku="%s" class="%s" target="_blank">%s</a>' ),
         esc_url( $product->add_to_cart_url() ),
         esc_attr( isset( $quantity ) ? $quantity : 1 ),
         esc_attr( $product->get_id() ),
@@ -212,7 +212,7 @@ final class WC_External_Product_New_Tab {
     do_action( 'woocommerce_before_add_to_cart_button' ); ?>
 
     <p class="cart">
-    	<a href="<?php echo esc_url( $product_url ); ?>" rel="nofollow" class="single_add_to_cart_button button alt" target="_blank"><?php echo esc_html( $button_text ); ?></a>
+    	<a href="<?php echo esc_url( $product_url ); ?>" rel="nofollow noopener noreferrer" class="single_add_to_cart_button button alt" target="_blank"><?php echo esc_html( $button_text ); ?></a>
     </p>
 
     <?php do_action( 'woocommerce_after_add_to_cart_button' );
